@@ -55,6 +55,7 @@
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .faculdade-tipo {
@@ -80,6 +81,28 @@
   background: linear-gradient(#b6f829, #67dd0a);
   position: absolute;
   left: -24px;
+}
+
+.faculdade-ano {
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  text-align: right;
+  width: 80px;
+  color: #a3a3a3;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .faculdade-ano {
+    position: initial;
+    order: 0;
+    width: initial;
+    text-align: left;
+    font-size: 0.7rem;
+  }
 }
 
 .faculdade-instituicao {
